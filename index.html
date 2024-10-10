@@ -1,1 +1,37 @@
 <!doctype HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Quiz Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Shareable Quiz Maker</h1>
+        <div id="quiz-form">
+            <h2>Create Your Quiz</h2>
+            <input type="text" id="question" placeholder="Enter your question" required>
+            <input type="text" id="option-a" placeholder="Option A" required>
+            <input type="text" id="option-b" placeholder="Option B" required>
+            <input type="text" id="option-c" placeholder="Option C" required>
+            <input type="text" id="option-d" placeholder="Option D" required>
+            <select id="correct-option" required>
+                <option value="">Select Correct Answer</option>
+                <option value="a">Option A</option>
+                <option value="b">Option B</option>
+                <option value="c">Option C</option>
+                <option value="d">Option D</option>
+            </select>
+            <button id="add-question">Add Question</button>
+            <button id="generate-quiz">Generate Quiz Link</button>
+        </div>
+        <div id="quiz-preview" style="display:none;">
+            <h2>Quiz Preview</h2>
+            <div id="preview-container"></div>
+            <button id="copy-link">Copy Quiz Link</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
